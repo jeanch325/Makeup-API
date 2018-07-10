@@ -9,10 +9,14 @@
 import UIKit
 
 class SourcesViewController: UITableViewController {
+    
+    var sources = [[String: String]]()
+    let apiKey = "5d892509a49046a087917c466fa80d09"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.title = "Makeup Sources"
+        let query = "http://makeup-api.herokuapp.com"
     }
 
     override func didReceiveMemoryWarning() {
